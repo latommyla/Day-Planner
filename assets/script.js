@@ -1,12 +1,9 @@
-var saveInfo = document.querySelector(".saveinfo")
-
 /* Sourced from GeeksforGeeks
  Digital clock for top of page for inputting */
 function showTime() {
  let time = new Date();
  let hour = time.getHours();
  let min = time.getMinutes();
- let sec = time.getSeconds();
  am_pm = "AM";
 
  if (hour > 12) {
@@ -22,7 +19,7 @@ function showTime() {
  min = min < 10 ? "0" + min : min;
 
  let currentTime = hour + ":"
-  + min + ":" + sec + am_pm;
+  + min + ":" + am_pm;
 
  document.getElementById("clock")
   .innerHTML = currentTime;
@@ -35,7 +32,7 @@ $(".saveInfo").click(function(event) {
  event.preventDefault();
  var newValue = $(this).siblings(".form-control").val();
  console.log("It saved!");
- var saveItem = $(this).parent().date("hour");
+ var listItem = $(this).parent().data("hour");
 
- localStorage.setItem(saveItem, newValue);
+ localStorage.setItem(listItem, newValue);
 })
