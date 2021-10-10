@@ -26,74 +26,100 @@
     <header class="jumbotron">
       <h1 class="display-3 text-center"> Day Planner </h1>
       <p class="lead text-center"> A simple calendar app for scheduling your days! </p>
+      <div id="clock"></div>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge"> 9:00 AM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary saveInfo" id="button-addon2"> Save </button>
+  
+   <div class="container">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 07:00 AM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+       </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 08:00 AM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 09:00 AM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
       </div>
    
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge2"> 10:00 AM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 10:00 AM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
       </div>
 
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge2"> 11:00 AM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 11:00 AM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
       </div>
 
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge2"> 12:00 PM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 12:00 PM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
       </div>
 
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge"> 1:00 PM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 01:00 PM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
       </div>
 
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge"> 2:00 PM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 02:00 PM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
       </div>
 
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge"> 3:00 PM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 03:00 PM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
       </div>
 
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge"> 4:00 PM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 04:00 PM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
       </div>
 
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge"> 5:00 PM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+         <span class="input-group-text" id="basic-addon1"> 05:00 PM </span>
+        </div>
+         <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
       </div>
- 
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge"> 6:00 PM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
-      </div>
- 
-     <div class="input-group mb-3">
-      <div><span class="badge bg-primary" id="timebadge"> 7:00 PM </span></div>
-      <input type="text" class="form-control" aria-label="large">
-      <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
-      </div>
+     </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
