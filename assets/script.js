@@ -90,6 +90,10 @@ var time5pm = beforeTime.add(1, 'h');
 time5pm = time5pm.format('hh:mm A');
 $('.block11').text(time5pm);
 
+var time6pm = beforeTime.add(1, 'h');
+time6pm = time6pm.format('hh:mm A');
+$('.block12').text(time6pm);
+
 function theTime() {
  time7am = moment().startOf('day').add(7, 'hours');
  currentTime = currentTime.startOf('hour');
@@ -212,10 +216,21 @@ function theTime() {
  else if (currentTime.isCurrent(time5pm)) {
   $('.form5pm').addClass('present');
  };
+ 
+ time6pm = moment().startOf('day').add(18, 'hours');
+ if (currentTime.isAfter(time6pm)) {
+  $('.form6pm').addClass('past');   
+ }
+ else if (currentTime.isBefore(time6pm)) {
+  $('.form6pm').addClass('future');
+ }
+ else if (currentTime.isCurrent(time6pm)) {
+  $('.form6pm').addClass('present');
+ };
 }
 theTime();
 
-var x = [7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5];
+var x = [7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
 for (var i = 0; i < x.length; i++) {
  var dataHour = localStorage.getItem(x[i]);
  $(".form" + x[i]).val(dataHour);
