@@ -10,34 +10,45 @@ document.getElementById("saveText8").value = getSavedValue("saveText8");
 document.getElementById("saveText9").value = getSavedValue("saveText9");
 document.getElementById("saveText10").value = getSavedValue("saveText10");
 document.getElementById("saveText11").value = getSavedValue("saveText11"); 
+document.getElementById("saveText12").value = getSavedValue("saveText12");
 
-/* Sourced from GeeksforGeeks 
- Digital clock for top of page for inputting */
+/* Date and clock functions */
 function showTime() {
- let time = new Date();
- let hour = time.getHours();
- let min = time.getMinutes();
- am_pm = "AM";
+ var today = new Date();
+ var hr = today.getHours();
+ var min = today.getMinutes();
 
- if (hour > 12) {
-  hour-= 12;
-  am_pm = "PM";
- }
- if (hour == 0) {
-  hr = 12;
-  am_pm = "AM";
- }
+ ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>"
+ hr = (hr == 0) ? 12 : hr;
+ hr = (hr > 12) ? hr - 12 : hr;
 
- hour = hour < 10 ? "0" + hour : hour;
- min = min < 10 ? "0" + min : min;
+ /* Hours */
+ hr = checkTime(hr);
+ /* Minutes */
+ min = checkTime(min);
+ document.getElementById('clock').innerHTML = hr + ":" + min + " " + ap;
 
- let currentTime = hour + ":"
-  + min + am_pm;
+ /* Months */
+ var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+ /* Days */
+ var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+ var curWeekDay = days[today.getDay()];
+ var curDay = today.getDate();
+ var curMonth = months[today.getMonth()];
+ var curYear = today.getFullYear();
+ var date = curWeekDay+", "+curMonth+" "+curDay+" "+curYear;
+ document.getElementById('date').innerHTML = date;
 
- document.getElementById("clock")
-  .innerHTML = currentTime;
 }
 showTime(); 
+
+function checkTime(i) {
+ if (i < 10) {
+  i = "0" + i;
+ }
+ return i;
+};
+
 
 moment(Date);
 $("#curentDay").text(moment().format("dddd MMMM Do YYYY, h:mm a"));
@@ -213,7 +224,7 @@ function theTime() {
  else if (currentTime.isBefore(time5pm)) {
   $('.form5pm').addClass('future'); 
  }
- else if (currentTime.isCurrent(time5pm)) {
+ else if (currentTime.isSame(time5pm)) {
   $('.form5pm').addClass('present');
  };
  
@@ -224,7 +235,7 @@ function theTime() {
  else if (currentTime.isBefore(time6pm)) {
   $('.form6pm').addClass('future');
  }
- else if (currentTime.isCurrent(time6pm)) {
+ else if (currentTime.isSame(time6pm)) {
   $('.form6pm').addClass('present');
  };
 }
