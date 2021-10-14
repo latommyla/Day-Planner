@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Link to all stylesheets -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,121 +20,151 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/style.css" />
+    <!-- Title -->
     <title> Day Planner </title>
   </head>
 
   <body>
+    <!-- Header -->
     <header class="jumbotron">
       <h1 class="display-3 text-center"> Day Planner </h1>
       <p class="lead text-center"> A simple calendar app for scheduling your days! </p>
+      <!-- Clock div added to header -->
+      <div id="date"></div>
       <div id="clock"></div>
       <p id="currentDay" class="lead"></p>
     </header>
   
+    <!-- Div class container for all time blocks and buttons -->
    <div class="container">
+     <!-- 7 am time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block1" id="basic-addon1"> 07:00 AM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form7am" id="saveText" onkeyup="saveValue(this);" aria-describedby="basic-addon1">
-         <button class="btn btn-primary saveInfo" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
        </div>
 
+       <!-- 8 am time block-->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block2" id="basic-addon1"> 08:00 AM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form8am" id="saveText2" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary saveInfo" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
 
+      <!-- 9 am time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block3" id="basic-addon1"> 09:00 AM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form9am" id="saveText3" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary saveInfo" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
    
+      <!-- 10 am time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block4" id="basic-addon1"> 10:00 AM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form10am" id="saveText4" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
 
+      <!-- 11 am time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block5" id="basic-addon1"> 11:00 AM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form11am" id="saveText5" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
 
+      <!-- 12 pm time block-->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block6" id="basic-addon1"> 12:00 PM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form12pm" id="saveText6" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
 
+      <!-- 1 pm time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block7" id="basic-addon1"> 01:00 PM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form1pm" id="saveText7" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
 
+      <!-- 2 pm time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block8" id="basic-addon1"> 02:00 PM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form2pm" id="saveText8" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
 
+      <!-- 3 pm time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block9" id="basic-addon1"> 03:00 PM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form3pm" id="saveText9" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
 
+      <!-- 4 pm time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block10" id="basic-addon1"> 04:00 PM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form4pm" id="saveText10" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
 
+      <!-- 5 pm time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block11" id="basic-addon1"> 05:00 PM </span>
         </div>
+        <!-- onekey up input class to save value -->
          <input type="text" class="form-control form5pm" id="saveText11" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
 
+      <!-- 6 pm time block -->
       <div class="input-group mb-3">
         <div class="input-group-prepend">
          <span class="input-group-text time-block block12" id="basic-addon1"> 06:00 PM </span>
         </div>
-         <input type="text" class="form-control form6pm" id="saveText11" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
-         <button class="btn btn-primary" type="button" id="button-addon2"> Save </button>
+        <!-- onekey up input class to save value -->
+         <input type="text" class="form-control form6pm" id="saveText12" onkeyup="saveValue(this);" aria-label="Username" aria-describedby="basic-addon1">
+         <button class="btn btn-primary saveBtn" type="button" id="button-addon2"> Save </button>
       </div>
      </div>
     </div>
 
-
+    <!-- JS scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
 
+    <!-- Footer -->
    <div class="footer">
     <footer> &copy; 2021 | Designed by Tommy La </footer>
     </div>
