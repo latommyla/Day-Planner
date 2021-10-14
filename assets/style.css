@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
+
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 16px;
@@ -19,6 +21,18 @@ textarea {
  color: black;
  border-radius: 0;
  border-bottom: 10px solid black;
+ font-family: 'Oswald', sans-serif;
+}
+
+#date {
+ font-size: 22px;
+ font-family: 'Bebas Neue', cursive;
+}
+
+#clock {
+ padding: 5px;
+ font-size: 22px;
+ font-family: 'Bebas Neue', cursive;
 }
 
 .description {
@@ -53,10 +67,9 @@ textarea {
 }
 
 .saveBtn {
- border-left: 1px solid black;
+ border-left: 1px;
  border-top-right-radius: 15px;
  border-bottom-right-radius: 15px;
- background-color: #06aed5;
  color: white;
 }
 
@@ -67,6 +80,11 @@ textarea {
 
 .input-group {
  padding: 5px;
+ height: 80px;
+}
+
+.form-control {
+ height: 80px;
 }
 
 .footer {
