@@ -23,3 +23,15 @@ Develop a simple day planner application with saving functions and color coded t
 To install this project, simply download the zip file or clone the SSH key to your terminal. GitHub has instructions on how to do this.
 
 ## How it works? 
+
+* First you will be presented with the title, date, and clock.
+
+<img src="./assets/images/demo.png" alt="mainpage" title="mainpage">
+
+* You then will be able to input text into the timeblock of your choosing.
+
+<img src="./assets/images/demo2.png" alt="textinput" title="textinput">
+
+* Then click the 'Save' button to save the inputted text, also will not disappear if you refresh the page.
+
+<img src="./assets/images/demo3.png" alt="saveinput" title="saveinput">
