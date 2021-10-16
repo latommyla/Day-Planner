@@ -35,3 +35,9 @@ To install this project, simply download the zip file or clone the SSH key to yo
 * Then click the 'Save' button to save the inputted text, also will not disappear if you refresh the page.
 
 <img src="./assets/images/demo3.png" alt="saveinput" title="saveinput">
+
+## Contact 
+
+* [My Gmail](mailto:tommyl.dmd@gmail.com)
+* [GitHub](https://github.com/latommyla)
+* [Instagram](https://instagram.com/latommyla/)
