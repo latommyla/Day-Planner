@@ -1,5 +1,7 @@
+/* Google font import */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
 
+/* Body elements */
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 16px;
@@ -24,11 +26,13 @@ textarea {
  font-family: 'Oswald', sans-serif;
 }
 
+/* Date */
 #date {
  font-size: 22px;
  font-family: 'Bebas Neue', cursive;
 }
 
+/* Clock */
 #clock {
  padding: 5px;
  font-size: 22px;
@@ -51,21 +55,25 @@ textarea {
  border-top: 1px dashed #000000;
 }
 
+/* Grey color block for past time */
 .past {
  background-color: #d3d3d3;
  color: white;
 }
 
+/* Red color block for present time */
 .present {
  background-color: #ff6961;
  color: white;
 }
 
+/* Green color block for future time */
 .future {
  background-color: #77dd77;
  color: white;
 }
 
+/* Save button */
 .saveBtn {
  border-left: 1px;
  border-top-right-radius: 15px;
@@ -73,6 +81,7 @@ textarea {
  color: white;
 }
 
+/* Save button hover */
 .saveBtn i:hover {
  font-size: 20px;
  transition: all 0.3s ease-in-out;
@@ -87,6 +96,7 @@ textarea {
  height: 80px;
 }
 
+/* Footer */
 .footer {
  background-color: #e8e8e8;
  padding-top: 15px;
