@@ -18,6 +18,14 @@ Develop a simple day planner application with saving functions and color coded t
 * JQuery
 * Bootstrap
 
+## Features
+
+* One HTML Page - Index.html
+
+* One CSS Page - style.css
+
+* One Javascript Page - script.js
+
 ## Installation
 
 To install this project, simply download the zip file or clone the SSH key to your terminal. GitHub has instructions on how to do this.
@@ -35,6 +43,10 @@ To install this project, simply download the zip file or clone the SSH key to yo
 * Then click the 'Save' button to save the inputted text, also will not disappear if you refresh the page.
 
 <img src="./assets/images/demo3.png" alt="saveinput" title="saveinput">
+
+* Red timeblocks represents the present/current time and Green timeblock represents the future time.
+
+<img src="./assets/images/demo4.png" alt="greenandredblock" title="greenandredblock">
 
 ## Contact 
 
