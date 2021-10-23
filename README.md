@@ -11,7 +11,7 @@ This project was for my UCSD coding bootcamp. Very fun project using bootstrap a
 
 Develop a simple day planner application with saving functions and color coded timeblocks (past, present, & future).
 
-## What was using in this project?
+## What was used in this project?
 
 * HTML
 * CSS
